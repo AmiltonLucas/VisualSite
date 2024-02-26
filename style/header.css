@@ -12,6 +12,7 @@ header {
   background: #fff2;
   border-radius: 100%;
   position: absolute;
+  z-index: -1;
 }
 
 .circle1 {
@@ -78,38 +79,21 @@ nav a:hover {
 }
 
 .boxSlogan h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   text-shadow: 1px 1px 2px #0002;
   animation: typing 3s 1s steps(25) both;
   white-space: nowrap;
   overflow: hidden;
+  font-family: "Kalam", cursive;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .boxSlogan p {
   font-size: 1.2rem;
   text-shadow: 1px 1px 2px #0002;
   animation: fadeIn 1s;
-}
-
-.boxSlogan button {
-  background: linear-gradient(#ffc44f, #cc9d3f);
-  color: white;
-  padding: 0.6rem;
-  border-radius: 1.2rem;
-  width: 10rem;
-  font-weight: 700;
-  font-size: 1.2rem;
-  text-shadow: 1px 1px 1px #0004;
-  box-shadow: 1px 1px 2px #0002;
-  transition: filter 200ms scale 200ms;
-  animation: pulse 1s 3.6s;
-}
-
-.boxSlogan button:hover {
-  cursor: pointer;
-  filter: brightness(1.05);
-  scale: 1.01;
 }
 
 .boxImageHumanCego img {
@@ -138,14 +122,6 @@ nav a:hover {
     right: -10rem;
   }
 
-  .wheelIcon img {
-    width: 140rem;
-    height: 140rem;
-    animation: rotate 17s linear infinite;
-    bottom: -3rem;
-    right: -8rem;
-  }
-
   .boxMenu {
     border-bottom: 1.25px solid #fff4;
   }
@@ -168,7 +144,7 @@ nav a:hover {
   }
 
   .boxSlogan h1 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     animation: typing 4s 1s steps(35) both;
   }
 
@@ -176,15 +152,8 @@ nav a:hover {
     font-size: 1.6rem;
   }
 
-  .boxSlogan button {
-    padding: 0.8rem;
-    width: 14rem;
-    font-size: 1.6rem;
-    animation: pulse 1s 3.1s;
-  }
-
-  .boxImageSaleswoman img {
-    width: 18rem;
+  .boxImageHumanCego img {
+    width: 24rem;
   }
 }
 
@@ -201,14 +170,6 @@ nav a:hover {
     width: 48rem;
     bottom: -10rem;
     right: -10rem;
-  }
-
-  .wheelIcon img {
-    width: 190rem;
-    height: 190rem;
-    animation: rotate 20s linear infinite;
-    bottom: -3rem;
-    right: -8rem;
   }
 
   .boxMenu {
@@ -233,22 +194,15 @@ nav a:hover {
   }
 
   .boxSlogan h1 {
-    font-size: 3.2rem;
+    font-size: 4.6rem;
     animation: typing 5s 1s steps(35) both;
   }
 
   .boxSlogan p {
-    font-size: 2rem;
+    font-size: 3.2rem;
   }
 
-  .boxSlogan button {
-    padding: 1rem;
-    width: 18rem;
-    font-size: 2rem;
-    animation: pulse 1s 3.5s;
-  }
-
-  .boxImageSaleswoman img {
-    width: 24rem;
+  .boxImageHumanCego img {
+    width: 28rem;
   }
 }
