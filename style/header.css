@@ -93,7 +93,7 @@ nav a:hover {
 .boxSlogan p {
   font-size: 1.2rem;
   text-shadow: 1px 1px 2px #0002;
-  animation: fadeIn 1s;
+  animation: fadeIn 5s;
 }
 
 .boxImageHumanCego img {
@@ -111,15 +111,15 @@ nav a:hover {
   .circle1 {
     height: 18rem;
     width: 18rem;
-    bottom: -15%;
+    bottom: -20%;
     right: 15rem;
   }
 
   .circle2 {
-    height: 34rem;
-    width: 34rem;
+    height: 38rem;
+    width: 38rem;
     bottom: -5rem;
-    right: -10rem;
+    right: -15rem;
   }
 
   .boxMenu {
@@ -127,24 +127,24 @@ nav a:hover {
   }
 
   .imageLogo {
-    width: 6.4rem;
+    width: 2.4rem;
   }
 
   nav ul {
-    gap: 1.6rem;
+    gap: 1rem;
   }
 
   .containerSlogan {
-    margin-top: 1.6rem;
+    margin-top: 1rem;
   }
 
   .boxSlogan {
-    max-width: 48rem;
+    max-width: 42rem;
     gap: 2rem;
   }
 
   .boxSlogan h1 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     animation: typing 4s 1s steps(35) both;
   }
 
@@ -159,17 +159,17 @@ nav a:hover {
 
 @media (min-width: 1024px) {
   .circle1 {
-    height: 24rem;
-    width: 24rem;
+    height: 26rem;
+    width: 26rem;
     bottom: -20%;
-    right: 25rem;
+    right: 20rem;
   }
 
   .circle2 {
-    height: 48rem;
-    width: 48rem;
+    height: 56rem;
+    width: 56rem;
     bottom: -10rem;
-    right: -10rem;
+    right: -20rem;
   }
 
   .boxMenu {
@@ -177,15 +177,15 @@ nav a:hover {
   }
 
   .imageLogo {
-    width: 8.2rem;
+    width: 5.0rem;
   }
 
   nav ul {
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .containerSlogan {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .boxSlogan {
@@ -194,15 +194,65 @@ nav a:hover {
   }
 
   .boxSlogan h1 {
-    font-size: 4.6rem;
+    font-size: 6.2rem;
     animation: typing 5s 1s steps(35) both;
   }
 
   .boxSlogan p {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 
   .boxImageHumanCego img {
-    width: 28rem;
+    width: 32rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .circle1 {
+    height: 32rem;
+    width: 32rem;
+    bottom: -30%;
+    right: 25rem;
+  }
+
+  .circle2 {
+    height: 62rem;
+    width: 62rem;
+    bottom: -10rem;
+    right: -20rem;
+  }
+
+  .boxMenu {
+    border-bottom: 1.5px solid #fff4;
+  }
+
+  .imageLogo {
+    width: 6.4rem;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  .containerSlogan {
+    margin-top: 1rem;
+  }
+
+  .boxSlogan {
+    max-width: 64rem;
+    gap: 2.4rem;
+  }
+
+  .boxSlogan h1 {
+    font-size: 6.2rem;
+    animation: typing 5s 1s steps(35) both;
+  }
+
+  .boxSlogan p {
+    font-size: 2.4rem;
+  }
+
+  .boxImageHumanCego img {
+    width: 36rem;
   }
 }

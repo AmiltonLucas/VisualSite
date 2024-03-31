@@ -1,3 +1,59 @@
+.square {
+  background-image: linear-gradient(to bottom, #c9f2e3, #6fa8bf, #6fa8bf);
+  border-radius: 0%;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle-main {
+  background-image: linear-gradient(to bottom, #c9f2e3, #6fa8bf, #6fa8bf);
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle-main1 {
+  top: 54rem;
+  height: 54rem;
+  width: 54rem;
+  bottom: 0%;
+  right: 60rem;
+}
+
+.square1 {
+  top: 54rem;
+  height: 54rem;
+  width: 90rem;
+  bottom: 0%;
+  right: -2rem;
+}
+
+.square2 {
+  background: transparent;
+  border: 2px solid #333;
+  top: 60rem;
+  height: 40rem;
+  width: 70rem;
+  bottom: 0%;
+  right: 5rem;
+}
+
+.logoMain {
+  width: 4.2rem;
+}
+
+.logoMain img {
+  width: 100%;
+}
+
+.eye-main {
+  width: 4.2rem;
+}
+
+.eye-main img {
+  width: 100%;
+}
+
 .whoWeAreContainer {
   padding: 2.4rem 0;
 }
@@ -30,7 +86,6 @@
 
 .cardOurServices .imageBox {
   width: 22rem;
-  background: linear-gradient(315deg, #dbefff, #f5fafe, #d1d8e8);
   border-radius: 0.8rem 0.8rem 0 0;
   padding: 0.4rem 4.2rem 1.2rem;
 }
@@ -94,9 +149,8 @@
 }
 
 .cardsWhyChooseUs {
-  display: flex;
+  display: contents;
   align-items: start;
-  flex-direction: column;
   justify-content: center;
   gap: 2.4rem;
   max-width: 52rem;
@@ -108,7 +162,7 @@
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
-  padding: 0 2.4rem;
+  padding: 2.4rem;
 }
 
 .cardWhyChooseUs .boxImage {
@@ -120,7 +174,7 @@
 }
 
 .cardWhyChooseUs p {
-  text-align: left;
+  text-align: justify;
   font-size: 1.4rem;
 }
 
@@ -257,6 +311,38 @@
 }
 
 @media (min-width: 1024px) {
+  .circle-main1 {
+    top: 55rem;
+    height: 40rem;
+    width: 40rem;
+    bottom: 0%;
+    right: 27.5rem;
+  }
+
+  .square1 {
+    top: 55rem;
+    height: 40rem;
+    width: 50rem;
+    bottom: 0%;
+    right: -2rem;
+  }
+
+  .square2 {
+    background: transparent;
+    border: 2px solid #333;
+    top: 62rem;
+    height: 25rem;
+    width: 40rem;
+    bottom: 0%;
+    right: 5rem;
+  }
+
+  .logoMain {
+    position: absolute;
+    width: 20rem;
+    right: 45rem;
+    top: 65rem;
+  }
   .ourServicesContainer {
     padding: 4.2rem 0;
   }
@@ -267,7 +353,7 @@
 
   .cardsOurServices {
     margin-top: 3.2rem;
-    display: flex;
+    display: block;
     align-items: start;
     justify-content: center;
     gap: 4.2rem;
@@ -311,6 +397,7 @@
 
   .boxWhyChooseUs h2 {
     font-size: 3.2rem;
+    animation: fadeIn 2s;
   }
 
   .cardsWhyChooseUs {
@@ -326,7 +413,157 @@
   }
 
   .cardWhyChooseUs p {
+    font-size: 2.6rem;
+  }
+
+  .howItWorksContainer {
+    padding: 6.4rem 4.2rem;
+  }
+
+  .howItWorksContainer h2 {
+    font-size: 3.2rem;
+  }
+  .cardsHowItWorks {
+    margin-top: 5.6rem;
+  }
+
+  .cardHowItWorks {
+    width: 32rem;
+  }
+
+  .cardHowItWorks h3 {
+    line-height: 160%;
+    font-size: 2rem;
+  }
+
+  .cardHowItWorks p {
     font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .circle-main1 {
+    top: 55rem;
+    height: 50rem;
+    width: 50rem;
+    bottom: 0%;
+    right: 50rem;
+  }
+
+  .square1 {
+    top: 55rem;
+    height: 50rem;
+    width: 78rem;
+    bottom: 0%;
+    right: -2rem;
+  }
+
+  .square2 {
+    background: transparent;
+    border: 2px solid #333;
+    top: 65rem;
+    height: 30rem;
+    width: 45rem;
+    bottom: 0%;
+    right: 10rem;
+  }
+
+  .logoMain {
+    position: absolute;
+    width: 35rem;
+    right: 60rem;
+    top: 63rem;
+  }
+
+  .eye-main-1 {
+    position: absolute;
+    width: 12rem;
+    right: 4rem;
+    top: 55.5rem;
+    rotate: 345deg;
+    opacity: 35%;
+  }
+
+  .eye-main-2 {
+    position: absolute;
+    width: 12rem;
+    right: 4rem;
+    top: 95rem;
+    rotate: 15deg;
+    opacity: 35%;
+  }
+
+  .ourServicesContainer {
+    padding: 4.2rem 0;
+  }
+
+  .ourServicesContainer h2 {
+    font-size: 3.2rem;
+  }
+
+  .cardsOurServices {
+    margin-top: 3.2rem;
+    display: block;
+    align-items: start;
+    justify-content: center;
+    gap: 4.2rem;
+  }
+
+  .cardOurServices {
+    width: 28rem;
+  }
+
+  .cardOurServices .imageBox {
+    width: 28rem;
+    padding: 0.8rem 4.2rem 1.6rem;
+  }
+
+  .cardOurServices h3 {
+    margin: 1.6rem 0 0.8rem;
+    font-size: 2rem;
+  }
+
+  .cardOurServices p {
+    font-size: 1.8rem;
+  }
+
+  .whyChooseUsContainer {
+    padding: 4.2rem 3.2rem 3.2rem;
+    display: flex;
+  }
+
+  .imageSalesPerson {
+    max-width: 36rem;
+  }
+
+  .imageSalesPerson .circle {
+    width: 39rem;
+    height: 39rem;
+  }
+
+  .boxWhyChooseUs {
+    margin: auto;
+  }
+
+  .boxWhyChooseUs h2 {
+    font-size: 3.2rem;
+    animation: fadeIn 2s;
+  }
+
+  .cardsWhyChooseUs {
+    gap: 3.2rem;
+  }
+
+  .cardWhyChooseUs {
+    gap: 2rem;
+  }
+
+  .cardWhyChooseUs .boxImage {
+    width: 5.2rem;
+  }
+
+  .cardWhyChooseUs p {
+    font-size: 2.6rem;
   }
 
   .howItWorksContainer {
