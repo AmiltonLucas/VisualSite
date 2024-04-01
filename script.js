@@ -18,3 +18,21 @@ botaoParar.addEventListener("click", function () {
     botaoParar.classList.add("visually-hidden");
   }
 });
+
+// Função para verificar a visibilidade das seções e aplicar classe 'visible' se estiverem visíveis
+function checkVisibility() {
+  var sections = document.querySelectorAll(".section");
+  sections.forEach(function (section) {
+    var top = section.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+    if (top < windowHeight) {
+      section.classList.add("visible");
+    }
+  });
+}
+
+// Adiciona um ouvinte de evento de rolagem para verificar a visibilidade das seções
+window.addEventListener("scroll", checkVisibility);
+
+// Chama a função inicialmente para verificar a visibilidade das seções ao carregar a página
+checkVisibility();

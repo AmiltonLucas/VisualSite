@@ -1,12 +1,27 @@
+:root {
+  --background-color: #d61a1a;
+  --background-color-2: #b01515;
+  --background-color-3: #700d0d;
+}
+
 .square {
-  background-image: linear-gradient(315deg, #2966c2, #2865c2, #1e4b8f);
+  background-image: linear-gradient(
+    135deg,
+    var(--background-color-3),
+    var(--background-color-2),
+    var(--background-color)
+  );
   border-radius: 0%;
   position: absolute;
   z-index: -1;
 }
 
 .circle-main {
-  background-image: linear-gradient(315deg, #2865c2, #1e4b8f);
+  background-image: linear-gradient(
+    135deg,
+    var(--background-color-3),
+    var(--background-color-2)
+  );
   border-radius: 100%;
   position: absolute;
   z-index: -1;
@@ -329,12 +344,12 @@
 
   .square2 {
     background: transparent;
-    border: 2px solid #333;
-    top: 62rem;
-    height: 25rem;
-    width: 40rem;
+    border: 12px solid #333;
+    top: 61.5rem;
+    height: 26rem;
+    width: 46rem;
     bottom: 0%;
-    right: 5rem;
+    right: 1rem;
   }
 
   .eye-main-1 {
@@ -370,6 +385,20 @@
     right: 45rem;
     top: 65rem;
   }
+
+  .video-main {
+    width: 45rem;
+    height: 25rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 62rem;
+    z-index: 2;
+  }
+
+  .video-main video {
+    width: 100%;
+  }
+
   .ourServicesContainer {
     padding: 4.2rem 0;
   }
@@ -384,7 +413,7 @@
     display: block;
     align-items: start;
     justify-content: center;
-    gap: 4.2rem;
+    gap: 4rem;
   }
 
   .cardOurServices {
@@ -411,12 +440,12 @@
   }
 
   .imageSalesPerson {
-    max-width: 36rem;
+    max-width: 32rem;
   }
 
   .imageSalesPerson .circle {
-    width: 39rem;
-    height: 39rem;
+    width: 34rem;
+    height: 34rem;
   }
 
   .boxWhyChooseUs {
@@ -429,7 +458,7 @@
   }
 
   .cardsWhyChooseUs {
-    gap: 3.2rem;
+    gap: 2.6rem;
   }
 
   .cardWhyChooseUs {
@@ -441,7 +470,7 @@
   }
 
   .cardWhyChooseUs p {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 
   .howItWorksContainer {
@@ -452,7 +481,7 @@
     font-size: 3.2rem;
   }
   .cardsHowItWorks {
-    margin-top: 5.6rem;
+    margin-top: 3.2rem;
   }
 
   .cardHowItWorks {
@@ -488,12 +517,12 @@
 
   .square2 {
     background: transparent;
-    border: 2px solid #333;
-    top: 65rem;
-    height: 30rem;
-    width: 45rem;
+    border: 16px solid #333;
+    top: 60.5rem;
+    height: 34rem;
+    width: 57rem;
     bottom: 0%;
-    right: 10rem;
+    right: 4rem;
   }
 
   .logoMain {
@@ -528,6 +557,19 @@
     top: 94rem;
     rotate: 356deg;
     opacity: 50%;
+  }
+
+  .video-main {
+    width: 55rem;
+    height: 34rem;
+    position: absolute;
+    right: 5rem;
+    top: 60.5rem;
+    z-index: 2;
+  }
+
+  .video-main video {
+    width: 100%;
   }
 
   .ourServicesContainer {
@@ -592,7 +634,7 @@
   }
 
   .cardWhyChooseUs {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .cardWhyChooseUs .boxImage {

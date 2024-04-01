@@ -1,5 +1,11 @@
+:root {
+  --background-color: #d61a1a;
+  --background-color-2: #b01515;
+  --background-color-3: #700d0d;
+}
+
 footer {
-  background: linear-gradient(135deg, #2966c2, #2865c2, #1e4b8f);
+  background: linear-gradient(135deg, var(--background-color-3), var(--background-color-2), var(--background-color));
   text-align: center;
   padding: 2.4rem;
   color: white;

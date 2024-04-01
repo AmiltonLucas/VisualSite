@@ -1,5 +1,16 @@
+:root {
+  --background-color: #d61a1a;
+  --background-color-2: #B01515;
+  --background-color-3: #700D0D;
+  --body-color: #D2C7B6;
+}
+
+body {
+  background: var(--body-color);
+}
+
 header {
-  background: linear-gradient(315deg, #2966c2, #2865c2, #1e4b8f);
+  background: linear-gradient(15deg, var(--background-color) , var(--background-color-2) , var(--background-color-3));
   width: 100%;
   padding: 1.6rem 1.6rem 0;
   color: white;
@@ -16,15 +27,15 @@ header {
 }
 
 .circle1 {
-  height: 12rem;
-  width: 12rem;
-  bottom: -10%;
-  right: 11rem;
+  height: 14rem;
+  width: 14rem;
+  bottom: -25%;
+  right: 10rem;
 }
 
 .circle2 {
-  height: 26rem;
-  width: 26rem;
+  height: 24rem;
+  width: 24rem;
   bottom: -3rem;
   right: -8rem;
 }

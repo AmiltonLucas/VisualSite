@@ -28,50 +28,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style/style.css" />
-    <style>
-      html {
-        overflow-x: hidden;
-      }
-
-      .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
-      }
-
-      .icon {
-        position: fixed;
-        bottom: 60px;
-        right: 30px;
-        font-size: 30px;
-        background: #1e4b8f;
-        color: #ffffff;
-        border-radius: 50%;
-        padding: 3px;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        text-decoration: none;
-        z-index: 100;
-        box-shadow: 2px 2px 2px #c0bdbd;
-      }
-      
-      .icon .fa-solid {
-        padding-top: 2px;
-      }
-
-      .icon:hover {
-        background-color: #fff;
-        color: #1e4b8f;
-        font-weight: 900;
-      }
-    </style>
+    <style></style>
     <script>
       function messageSubscribe() {
         alert("Obrigado por se inscrever em nossa página!");
@@ -80,13 +44,18 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <button id="botao-acessibilidade" class="icon">
+    <button id="botao-acessibilidade" class="icon" tabindex="1">
       <i class="fa-solid fa-hands fa-rotate-90"></i>
     </button>
-    <a href="" class="icon-mute">
+
     <button id="botao-parar" class="visually-hidden">
-      <i class="fa-solid fa-microphone-slash" class="icon-mute" style="color: #333"></i>
-    </button></a>
+      <i
+        class="fa-solid fa-microphone-slash"
+        class="icon-mute"
+        style="color: #333"
+      ></i>
+    </button>
+
     <div id="texto-demarcado"></div>
 
     <header id="home">
@@ -94,9 +63,10 @@
       <div class="circle circle2"></div>
 
       <article>
+        <!-- MENU DESKTOP -->
         <section class="boxMenu">
-          <a href="#" class="imageLogo">
-            <img src="./images/logo.png" alt="" />
+          <a href="" class="imageLogo">
+            <img src="./images/Facs.png" alt="" />
           </a>
 
           <nav class="menu">
@@ -134,6 +104,9 @@
         <div class="logoMain">
           <img src="images/logo.png" />
         </div>
+        <video controls width="640" height="335" class="video-main">
+          <source src="video/lv_0_20240331182818.mp4" type="video/mp4">
+        </video>
         <div class="eye-main eye-main-1">
           <img src="images/blindVision.png" alt="" />
         </div>
@@ -171,291 +144,308 @@
           </div>
         </section>
 
-        <section class="whyChooserUsContainer" id="whyChooserUs">
-          <div class="imageSalesPerson">
-            <div class="circle"></div>
-            <img src="images/IconManCego.png" alt="" />
-          </div>
+        <div class="section" id="section1">
+          <section class="whyChooserUsContainer" id="whyChooserUs">
+            <div class="imageSalesPerson">
+              <div class="circle"></div>
+              <img src="images/IconManCego.png" alt="" />
+            </div>
 
-          <div class="boxWhyChooseUs">
-            <h2>O que é deficiência visual?</h2>
-            <div class="cardsWhyChooseUs">
-              <div class="cardWhyChooseUs">
-                <div class="boxImage">
-                  <img src="" alt="" />
+            <div class="boxWhyChooseUs">
+              <h2>O que é deficiência visual?</h2>
+              <div class="cardsWhyChooseUs">
+                <div class="cardWhyChooseUs">
+                  <div class="boxImage">
+                    <img src="" alt="" />
+                  </div>
+                  <p>
+                    Deficiência visual é uma condição que afeta a capacidade de
+                    uma pessoa enxergar com clareza. <br />
+                    Pode variar em gravidade, desde dificuldades moderadas de
+                    visão até cegueira total. <br />
+                    As causas da deficiência visual podem ser congênitas
+                    (presentes desde o nascimento) ou adquiridas ao longo da
+                    vida devido a doenças, lesões ou condições degenerativas.
+                    <br />
+                    As pessoas com deficiência visual podem enfrentar desafios
+                    em várias áreas da vida, mas muitas vezes conseguem
+                    adaptar-se e viver de forma independente com o uso de
+                    técnicas de orientação, dispositivos auxiliares e suporte
+                    adequado.
+                  </p>
                 </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="section" id="section2">
+          <section class="howItWorksContainer" id="howItWorks">
+            <h2>Quais os tipos de deficiência visual?</h2>
+            <div class="cardsHowItWorks">
+              <div class="cardHowItWorks">
+                <img src="./images/lowerVision.png" alt="" />
+                <h3>1. Baixa visão</h3>
                 <p>
-                  Deficiência visual é uma condição que afeta a capacidade de
-                  uma pessoa enxergar com clareza. <br />
-                  Pode variar em gravidade, desde dificuldades moderadas de
-                  visão até cegueira total. <br />
-                  As causas da deficiência visual podem ser congênitas
-                  (presentes desde o nascimento) ou adquiridas ao longo da vida
-                  devido a doenças, lesões ou condições degenerativas. <br />
-                  As pessoas com deficiência visual podem enfrentar desafios em
-                  várias áreas da vida, mas muitas vezes conseguem adaptar-se e
-                  viver de forma independente com o uso de técnicas de
-                  orientação, dispositivos auxiliares e suporte adequado.
+                  Também conhecida como visão subnormal, refere-se a uma visão
+                  reduzida que não pode ser completamente corrigida com o uso de
+                  óculos, lentes de contato, cirurgia ou outros tratamentos.
+                  Pessoas com baixa visão podem ter dificuldade em ver detalhes
+                  finos, ler ou distinguir cores.
+                </p>
+              </div>
+
+              <div class="cardHowItWorks">
+                <img src="images/parcialVision.png" alt="" />
+                <h3>2. Cegueira parcial</h3>
+                <p>
+                  Pessoas com cegueira parcial têm alguma visão residual, mas
+                  está é insuficiente para realizar tarefas visuais sem auxílio.
+                  A visão pode ser limitada a percepções de luz e sombra ou a
+                  uma visão turva.
+                </p>
+              </div>
+
+              <div class="cardHowItWorks">
+                <img src="./images/blindVision.png" alt="" />
+                <h3>3. Cegueira total</h3>
+                <p>
+                  Refere-se à perda completa da visão. As pessoas com cegueira
+                  total não têm nenhuma percepção visual.
+                </p>
+              </div>
+              <div class="cardHowItWorks">
+                <img src="./images/nightVision.png" alt="" />
+                <h3>4. Cegueira nortuna</h3>
+                <p>
+                  Caracterizada pela incapacidade de ver bem em condições de
+                  pouca luz, como à noite ou em ambientes pouco iluminados.
                 </p>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
-        <section class="howItWorksContainer" id="howItWorks">
-          <h2>Quais os tipos de deficiência visual?</h2>
-          <div class="cardsHowItWorks">
-            <div class="cardHowItWorks">
-              <img src="./images/lowerVision.png" alt="" />
-              <h3>1. Baixa visão</h3>
-              <p>
-                Também conhecida como visão subnormal, refere-se a uma visão
-                reduzida que não pode ser completamente corrigida com o uso de
-                óculos, lentes de contato, cirurgia ou outros tratamentos.
-                Pessoas com baixa visão podem ter dificuldade em ver detalhes
-                finos, ler ou distinguir cores.
-              </p>
-            </div>
+        <div class="section" id="section3">
+          <section class="howItWorksContainer" id="howItWorks">
+            <div class="cardsHowItWorks">
+              <div class="cardHowItWorks">
+                <img src="./images/eyeColorBlindness.png" alt="" />
+                <h3>5. Daltonismo:</h3>
+                <p>
+                  Uma deficiência na percepção das cores, onde a pessoa tem
+                  dificuldade em distinguir certas cores, como vermelho e verde.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="images/parcialVision.png" alt="" />
-              <h3>2. Cegueira parcial</h3>
-              <p>
-                Pessoas com cegueira parcial têm alguma visão residual, mas está
-                é insuficiente para realizar tarefas visuais sem auxílio. A
-                visão pode ser limitada a percepções de luz e sombra ou a uma
-                visão turva.
-              </p>
-            </div>
+              <div class="cardHowItWorks">
+                <img src="images/eyeCatarata.png" alt="" />
+                <h3>6. Catarata:</h3>
+                <p>
+                  Uma condição em que a lente do olho se torna opaca, resultando
+                  em visão embaçada ou nublada.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="./images/blindVision.png" alt="" />
-              <h3>3. Cegueira total</h3>
-              <p>
-                Refere-se à perda completa da visão. As pessoas com cegueira
-                total não têm nenhuma percepção visual.
-              </p>
+              <div class="cardHowItWorks">
+                <img src="./images/eyeGlaucoma.png" alt="" />
+                <h3>7. Glaucoma:</h3>
+                <p>
+                  Uma doença ocular que danifica o nervo óptico e pode levar à
+                  perda gradual da visão periférica.
+                </p>
+              </div>
+              <div class="cardHowItWorks">
+                <img src="./images/eyeMucular.png" alt="" />
+                <h3>8.Degeneração macular:</h3>
+                <p>
+                  Uma condição na qual a mácula, parte da retina responsável
+                  pela visão central, se deteriora, afetando a capacidade de ver
+                  detalhes finos
+                </p>
+              </div>
             </div>
-            <div class="cardHowItWorks">
-              <img src="./images/nightVision.png" alt="" />
-              <h3>4. Cegueira nortuna</h3>
-              <p>
-                Caracterizada pela incapacidade de ver bem em condições de pouca
-                luz, como à noite ou em ambientes pouco iluminados.
-              </p>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
-        <section class="howItWorksContainer" id="howItWorks">
-          <div class="cardsHowItWorks">
-            <div class="cardHowItWorks">
-              <img src="./images/eyeColorBlindness.png" alt="" />
-              <h3>5. Daltonismo:</h3>
-              <p>
-                Uma deficiência na percepção das cores, onde a pessoa tem
-                dificuldade em distinguir certas cores, como vermelho e verde.
-              </p>
-            </div>
+        <div class="section" id="section4">
+          <section class="howItWorksContainer" id="Impacts">
+            <h2>Quais os impactos na sociedade?</h2>
+            <div class="cardsHowItWorks">
+              <div class="cardHowItWorks">
+                <img src="./images/blindHuman.png" alt="" />
+                <h3>1. Barreiras físicas e arquitetônicas</h3>
+                <p>
+                  A falta de acessibilidade em espaços públicos, edifícios,
+                  transporte e infraestrutura urbana pode dificultar
+                  significativamente a vida diária das pessoas com deficiência
+                  visual, limitando sua independência e mobilidade.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="images/eyeCatarata.png" alt="" />
-              <h3>6. Catarata:</h3>
-              <p>
-                Uma condição em que a lente do olho se torna opaca, resultando
-                em visão embaçada ou nublada.
-              </p>
-            </div>
+              <div class="cardHowItWorks">
+                <img src="images/notComuHumans.png" alt="" />
+                <h3>2.Barreiras comunicacionais</h3>
+                <p>
+                  A sociedade muitas vezes não está preparada para lidar com as
+                  necessidades de comunicação das pessoas com deficiência
+                  visual. Isso pode incluir a falta de materiais educacionais em
+                  formatos acessíveis, falta de treinamento para profissionais
+                  que trabalham com pessoas com deficiência visual e falta de
+                  disponibilidade de tecnologias assistivas.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="./images/eyeGlaucoma.png" alt="" />
-              <h3>7. Glaucoma:</h3>
-              <p>
-                Uma doença ocular que danifica o nervo óptico e pode levar à
-                perda gradual da visão periférica.
-              </p>
+              <div class="cardHowItWorks">
+                <img src="./images/discrimination.png" alt="" />
+                <h3>3. Atitudes e preconceitos:</h3>
+                <p>
+                  A discriminação, estereótipos e atitudes negativas em relação
+                  às pessoas com deficiência visual podem resultar em exclusão
+                  social, isolamento e dificuldade em obter emprego ou
+                  participar plenamente da comunidade.
+                </p>
+              </div>
             </div>
-            <div class="cardHowItWorks">
-              <img src="./images/eyeMucular.png" alt="" />
-              <h3>8.Degeneração macular:</h3>
-              <p>
-                Uma condição na qual a mácula, parte da retina responsável pela
-                visão central, se deteriora, afetando a capacidade de ver
-                detalhes finos
-              </p>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
-        <section class="howItWorksContainer" id="Impacts">
-          <h2>Quais os impactos na sociedade?</h2>
-          <div class="cardsHowItWorks">
-            <div class="cardHowItWorks">
-              <img src="./images/blindHuman.png" alt="" />
-              <h3>1. Barreiras físicas e arquitetônicas</h3>
-              <p>
-                A falta de acessibilidade em espaços públicos, edifícios,
-                transporte e infraestrutura urbana pode dificultar
-                significativamente a vida diária das pessoas com deficiência
-                visual, limitando sua independência e mobilidade.
-              </p>
-            </div>
+        <div class="section" id="section5">
+          <section class="howItWorksContainer" id="Impacts">
+            <div class="cardsHowItWorks">
+              <div class="cardHowItWorks">
+                <img src="./images/lowOpportunity.png" alt="" />
+                <h3>4. Falta de oportunidades:</h3>
+                <p>
+                  Pessoas com deficiência visual podem enfrentar dificuldades
+                  para acessar oportunidades educacionais, emprego e serviços de
+                  saúde, devido a barreiras estruturais, preconceitos e falta de
+                  apoio adequado.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="images/notComuHumans.png" alt="" />
-              <h3>2. Barreiras comunicacionais</h3>
-              <p>
-                A sociedade muitas vezes não está preparada para lidar com as
-                necessidades de comunicação das pessoas com deficiência visual.
-                Isso pode incluir a falta de materiais educacionais em formatos
-                acessíveis, falta de treinamento para profissionais que
-                trabalham com pessoas com deficiência visual e falta de
-                disponibilidade de tecnologias assistivas.
-              </p>
-            </div>
+              <div class="cardHowItWorks">
+                <img src="images/depedencyHuman.png" alt="" />
+                <h3>5. Dependência excessiva:</h3>
+                <p>
+                  Em alguns casos, a sociedade pode tender a subestimar as
+                  habilidades das pessoas com deficiência visual, levando à
+                  superproteção e à criação de uma cultura de dependência, em
+                  vez de promover a autonomia e a inclusão.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="./images/discrimination.png" alt="" />
-              <h3>3. Atitudes e preconceitos:</h3>
-              <p>
-                A discriminação, estereótipos e atitudes negativas em relação às
-                pessoas com deficiência visual podem resultar em exclusão
-                social, isolamento e dificuldade em obter emprego ou participar
-                plenamente da comunidade.
-              </p>
+              <div class="cardHowItWorks">
+                <img src="./images/lokedHuman.png" alt="" />
+                <h3>6. Falta de conscientização:</h3>
+                <p>
+                  A falta de conscientização sobre as necessidades e capacidades
+                  das pessoas com deficiência visual pode levar à falta de
+                  acomodações adequadas e à exclusão involuntária de atividades
+                  e espaços sociais.
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
-        <section class="howItWorksContainer" id="Impacts">
-          <div class="cardsHowItWorks">
-            <div class="cardHowItWorks">
-              <img src="./images/lowOpportunity.png" alt="" />
-              <h3>4. Falta de oportunidades:</h3>
-              <p>
-                Pessoas com deficiência visual podem enfrentar dificuldades para
-                acessar oportunidades educacionais, emprego e serviços de saúde,
-                devido a barreiras estruturais, preconceitos e falta de apoio
-                adequado.
-              </p>
-            </div>
+        <div class="section" id="section6">
+          <section class="howItWorksContainer" id="adaptation">
+            <h2>
+              Como adaptar o ambiente e a rotina para lidar com pessoas com
+              deficiência visual?
+            </h2>
+            <div class="cardsHowItWorks">
+              <div class="cardHowItWorks">
+                <img src="./images/homeAcessibility.png" alt="" />
+                <h3>1. Acessibilidade física:</h3>
+                <p>
+                  Certifique-se de que o ambiente esteja adaptado para facilitar
+                  a locomoção de pessoas com deficiência visual. Isso inclui
+                  garantir que não haja obstáculos no caminho, instalar
+                  corrimãos em escadas e rampas, e usar pisos táteis e
+                  sinalização adequada para orientação.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="images/depedencyHuman.png" alt="" />
-              <h3>5. Dependência excessiva:</h3>
-              <p>
-                Em alguns casos, a sociedade pode tender a subestimar as
-                habilidades das pessoas com deficiência visual, levando à
-                superproteção e à criação de uma cultura de dependência, em vez
-                de promover a autonomia e a inclusão.
-              </p>
-            </div>
+              <div class="cardHowItWorks">
+                <img src="images/braille.png" alt="" />
+                <h3>2. Comunicação eficaz:</h3>
+                <p>
+                  Utilize formas alternativas de comunicação, como Braille,
+                  grandes letras, áudio descrição e tecnologias assistivas, para
+                  tornar informações e materiais acessíveis para pessoas com
+                  deficiência visual. Treine funcionários e colegas para
+                  interagir de maneira inclusiva e sensível.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="./images/lokedHuman.png" alt="" />
-              <h3>6. Falta de conscientização:</h3>
-              <p>
-                A falta de conscientização sobre as necessidades e capacidades
-                das pessoas com deficiência visual pode levar à falta de
-                acomodações adequadas e à exclusão involuntária de atividades e
-                espaços sociais.
-              </p>
+              <div class="cardHowItWorks">
+                <img src="./images/instruction.png" alt="" />
+                <h3>3. Instruções claras:</h3>
+                <p>
+                  Ao fornecer instruções ou orientações, seja claro e conciso.
+                  Use descrições verbais detalhadas e ofereça ajuda sempre que
+                  necessário, sem presumir as necessidades da pessoa com
+                  deficiência visual.
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
-        <section class="howItWorksContainer" id="adaptation">
-          <h2>
-            Como adaptar o ambiente e a rotina para lidar com pessoas com
-            deficiência visual?
-          </h2>
-          <div class="cardsHowItWorks">
-            <div class="cardHowItWorks">
-              <img src="./images/homeAcessibility.png" alt="" />
-              <h3>1. Acessibilidade física:</h3>
-              <p>
-                Certifique-se de que o ambiente esteja adaptado para facilitar a
-                locomoção de pessoas com deficiência visual. Isso inclui
-                garantir que não haja obstáculos no caminho, instalar corrimãos
-                em escadas e rampas, e usar pisos táteis e sinalização adequada
-                para orientação.
-              </p>
-            </div>
+        <div class="section" id="section7">
+          <section class="howItWorksContainer" id="adaptation">
+            <div class="cardsHowItWorks">
+              <div class="cardHowItWorks">
+                <img src="./images/ambient.png" alt="" />
+                <h3>4. Organização do ambiente:</h3>
+                <p>
+                  Mantenha o ambiente organizado e consistente para facilitar a
+                  orientação e a independência das pessoas com deficiência
+                  visual. Evite movimentar móveis ou objetos sem aviso prévio e
+                  mantenha os espaços livres de obstáculos.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="images/braille.png" alt="" />
-              <h3>2. Comunicação eficaz:</h3>
-              <p>
-                Utilize formas alternativas de comunicação, como Braille,
-                grandes letras, áudio descrição e tecnologias assistivas, para
-                tornar informações e materiais acessíveis para pessoas com
-                deficiência visual. Treine funcionários e colegas para interagir
-                de maneira inclusiva e sensível.
-              </p>
-            </div>
+              <div class="cardHowItWorks">
+                <img src="images/voice.png" alt="" />
+                <h3>5. Suporte tecnológico:</h3>
+                <p>
+                  Explore tecnologias assistivas, como leitores de tela,
+                  aplicativos de reconhecimento de voz e dispositivos de
+                  navegação por GPS, que podem ajudar pessoas com deficiência
+                  visual a se orientar, acessar informações e realizar tarefas
+                  diárias de forma mais independente.
+                </p>
+              </div>
 
-            <div class="cardHowItWorks">
-              <img src="./images/instruction.png" alt="" />
-              <h3>3. Instruções claras:</h3>
-              <p>
-                Ao fornecer instruções ou orientações, seja claro e conciso. Use
-                descrições verbais detalhadas e ofereça ajuda sempre que
-                necessário, sem presumir as necessidades da pessoa com
-                deficiência visual.
-              </p>
-            </div>
-          </div>
-        </section>
+              <div class="cardHowItWorks">
+                <img src="./images/training.png" alt="" />
+                <h3>6.Treinamento e conscientização:</h3>
+                <p>
+                  Ofereça treinamento regular para funcionários, colegas e
+                  membros da comunidade sobre como interagir de forma inclusiva
+                  e respeitosa com pessoas com deficiência visual. Isso pode
+                  ajudar a reduzir estigmas e preconceitos, promovendo uma
+                  cultura de inclusão e aceitação.
+                </p>
+              </div>
 
-        <section class="howItWorksContainer" id="adaptation">
-          <div class="cardsHowItWorks">
-            <div class="cardHowItWorks">
-              <img src="./images/ambient.png" alt="" />
-              <h3>4. Organização do ambiente:</h3>
-              <p>
-                Mantenha o ambiente organizado e consistente para facilitar a
-                orientação e a independência das pessoas com deficiência visual.
-                Evite movimentar móveis ou objetos sem aviso prévio e mantenha
-                os espaços livres de obstáculos.
-              </p>
+              <div class="cardHowItWorks">
+                <img src="./images/flexibility.png" alt="" />
+                <h3>7. Flexibilidade e adaptação:</h3>
+                <p>
+                  Esteja aberto a ajustar procedimentos e rotinas conforme
+                  necessário para atender às necessidades individuais das
+                  pessoas com deficiência visual. Seja flexível e receptivo a
+                  feedback sobre como melhorar a acessibilidade e a inclusão no
+                  ambiente.
+                </p>
+              </div>
             </div>
-
-            <div class="cardHowItWorks">
-              <img src="images/voice.png" alt="" />
-              <h3>5. Suporte tecnológico:</h3>
-              <p>
-                Explore tecnologias assistivas, como leitores de tela,
-                aplicativos de reconhecimento de voz e dispositivos de navegação
-                por GPS, que podem ajudar pessoas com deficiência visual a se
-                orientar, acessar informações e realizar tarefas diárias de
-                forma mais independente.
-              </p>
-            </div>
-
-            <div class="cardHowItWorks">
-              <img src="./images/training.png" alt="" />
-              <h3>6.Treinamento e conscientização:</h3>
-              <p>
-                Ofereça treinamento regular para funcionários, colegas e membros
-                da comunidade sobre como interagir de forma inclusiva e
-                respeitosa com pessoas com deficiência visual. Isso pode ajudar
-                a reduzir estigmas e preconceitos, promovendo uma cultura de
-                inclusão e aceitação.
-              </p>
-            </div>
-
-            <div class="cardHowItWorks">
-              <img src="./images/flexibility.png" alt="" />
-              <h3>7. Flexibilidade e adaptação:</h3>
-              <p>
-                Esteja aberto a ajustar procedimentos e rotinas conforme
-                necessário para atender às necessidades individuais das pessoas
-                com deficiência visual. Seja flexível e receptivo a feedback
-                sobre como melhorar a acessibilidade e a inclusão no ambiente.
-              </p>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </article>
     </main>
 
@@ -465,8 +455,8 @@
           <section class="subscribe">
             <h3>Fale conosco</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              sequi dolorem soluta eum nostrum non omnis
+              Estamos ansiosos para ouvir sua opinião e ajudá-lo com qualquer
+              dúvida que possa ter!
             </p>
 
             <form onsubmit="{messageSubscribe()}">
@@ -484,7 +474,7 @@
             <h3>Contatos</h3>
             <div class="contact">
               <strong>Telefone</strong>
-              <p>(88) 9968-4228</p>
+              <p>(88)2143-1266</p>
             </div>
 
             <div class="contact">
@@ -493,16 +483,22 @@
             </div>
 
             <div class="socialMedias">
-              <a href="">
+              <a
+                href="https://www.facebook.com/p/Faculdade-Centro-Sul-_FACS-100065023330019/"
+                target="_blank"
+              >
                 <div class="logo">
-                  <img src="./images/logo-facebook.png" alt="" />
+                  <img src="./images/facebook.png" alt="" />
                 </div>
                 <strong>Facebook</strong>
               </a>
 
-              <a href="">
+              <a
+                href="https://www.instagram.com/faculdadecentrosul/"
+                target="_blank"
+              >
                 <div class="logo">
-                  <img src="./images/logo-instagram.png" alt="" />
+                  <img src="./images/instagram.png" alt="" />
                 </div>
                 <strong>Instagram</strong>
               </a>
@@ -512,16 +508,16 @@
           <section class="local">
             <h3>Localização</h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15856.028524251788!2d-39.5369154774213!3d-6.520779077016216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a2f2555326e5cb%3A0x79f5f4ac44bf3b6d!2sCENTEC%20CVT%20Juc%C3%A1s!5e0!3m2!1spt-BR!2sbr!4v1698261506435!5m2!1spt-BR!2sbr"
-              width="600"
-              height="450"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2327345939225!2d-39.29834532496125!3d-6.363918593626177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a31f765d8a8d7d%3A0x234f10f2a0ddfeaf!2sFaculdade%20Centro%20Sul!5e0!3m2!1spt-BR!2sbr!4v1711981254495!5m2!1spt-BR!2sbr"
+              width="800"
+              height="600"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
 
-            <p>Rua Antônio Palácio Calvacante, 133, Nossa Senhora de Fátima</p>
+            <p>Av. Dr. José Holanda Montenegro, 870 - Centro</p>
           </section>
         </article>
       </div>

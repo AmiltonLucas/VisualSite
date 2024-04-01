@@ -1,3 +1,75 @@
+h1,
+h2,
+h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+p,
+a {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.icon {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  font-size: 30px;
+  background: #1e4b8f;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 100;
+  box-shadow: 2px 2px 2px #c0bdbd;
+}
+
+.icon .fa-solid {
+  padding-top: 2px;
+}
+
+.icon:hover {
+  background-color: #fff;
+  color: #1e4b8f;
+  font-weight: 900;
+}
+
+.section {
+  padding: 100px 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
 :root {
   font-size: 62.5%;
   scroll-behavior: smooth;
