@@ -509,7 +509,7 @@
     right: 4rem;
     top: 55.5rem;
     rotate: 345deg;
-    opacity: 35%;
+    opacity: 50%;
   }
 
   .eye-main-2 {
@@ -518,16 +518,16 @@
     right: 4rem;
     top: 95rem;
     rotate: 15deg;
-    opacity: 35%;
+    opacity: 50%;
   }
 
   .eye-main-3 {
     position: absolute;
     width: 12rem;
     right: 55rem;
-    top: 95rem;
+    top: 94rem;
     rotate: 356deg;
-    opacity: 35%;
+    opacity: 50%;
   }
 
   .ourServicesContainer {

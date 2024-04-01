@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="shortcut icon"
+      href="images/blindVision.png"
+      type="image/x-icon"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
@@ -39,6 +44,33 @@
         clip: rect(0, 0, 0, 0);
         border: 0;
       }
+
+      .icon {
+        position: fixed;
+        bottom: 60px;
+        right: 30px;
+        font-size: 30px;
+        background: #1e4b8f;
+        color: #ffffff;
+        border-radius: 50%;
+        padding: 3px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        z-index: 100;
+        box-shadow: 2px 2px 2px #c0bdbd;
+      }
+      
+      .icon .fa-solid {
+        padding-top: 2px;
+      }
+
+      .icon:hover {
+        background-color: #fff;
+        color: #1e4b8f;
+        font-weight: 900;
+      }
     </style>
     <script>
       function messageSubscribe() {
@@ -48,6 +80,15 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <button id="botao-acessibilidade" class="icon">
+      <i class="fa-solid fa-hands fa-rotate-90"></i>
+    </button>
+    <a href="" class="icon-mute">
+    <button id="botao-parar" class="visually-hidden">
+      <i class="fa-solid fa-microphone-slash" class="icon-mute" style="color: #333"></i>
+    </button></a>
+    <div id="texto-demarcado"></div>
+
     <header id="home">
       <div class="circle circle1"></div>
       <div class="circle circle2"></div>
@@ -417,12 +458,6 @@
         </section>
       </article>
     </main>
-
-    <button id="botao-acessibilidade">Ler texto selecionado</button>
-    <button id="botao-parar" class="visually-hidden">Parar leitura</button>
-
-    <div id="texto-demarcado">
-    </div>
 
     <footer>
       <div class="container">
