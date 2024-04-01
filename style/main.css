@@ -1,12 +1,12 @@
 .square {
-  background-image: linear-gradient(to bottom, #c9f2e3, #6fa8bf, #6fa8bf);
+  background-image: linear-gradient(315deg, #2966c2, #2865c2, #1e4b8f);
   border-radius: 0%;
   position: absolute;
   z-index: -1;
 }
 
 .circle-main {
-  background-image: linear-gradient(to bottom, #c9f2e3, #6fa8bf, #6fa8bf);
+  background-image: linear-gradient(315deg, #2865c2, #1e4b8f);
   border-radius: 100%;
   position: absolute;
   z-index: -1;
@@ -129,8 +129,8 @@
   position: absolute;
   background: linear-gradient(135deg, #2966c222, #2865c222, #1e4b8f22);
   z-index: -1;
-  height: 24rem;
-  width: 24rem;
+  height: 20rem;
+  width: 20rem;
   top: 0rem;
   left: -1rem;
 }
@@ -337,6 +337,33 @@
     right: 5rem;
   }
 
+  .eye-main-1 {
+    position: absolute;
+    width: 8rem;
+    right: 4rem;
+    top: 55.5rem;
+    rotate: 345deg;
+    opacity: 35%;
+  }
+
+  .eye-main-2 {
+    position: absolute;
+    width: 8rem;
+    right: 4rem;
+    top: 88rem;
+    rotate: 15deg;
+    opacity: 35%;
+  }
+
+  .eye-main-3 {
+    position: absolute;
+    width: 9rem;
+    right: 45rem;
+    top: 87rem;
+    rotate: 356deg;
+    opacity: 35%;
+  }
+
   .logoMain {
     position: absolute;
     width: 20rem;
@@ -353,6 +380,7 @@
 
   .cardsOurServices {
     margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
     display: block;
     align-items: start;
     justify-content: center;
@@ -364,7 +392,7 @@
   }
 
   .cardOurServices .imageBox {
-    width: 28rem;
+    width: 24rem;
     padding: 0.8rem 4.2rem 1.6rem;
   }
 
@@ -493,6 +521,15 @@
     opacity: 35%;
   }
 
+  .eye-main-3 {
+    position: absolute;
+    width: 12rem;
+    right: 55rem;
+    top: 95rem;
+    rotate: 356deg;
+    opacity: 35%;
+  }
+
   .ourServicesContainer {
     padding: 4.2rem 0;
   }
@@ -533,12 +570,12 @@
   }
 
   .imageSalesPerson {
-    max-width: 36rem;
+    max-width: 42rem;
   }
 
   .imageSalesPerson .circle {
-    width: 39rem;
-    height: 39rem;
+    width: 45rem;
+    height: 45rem;
   }
 
   .boxWhyChooseUs {
